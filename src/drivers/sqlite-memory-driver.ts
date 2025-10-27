@@ -80,7 +80,7 @@ export class SQLiteMemoryDriver implements SQLocalDriver {
 						stmt = newStmt;
 					}
 
-					if (statement.params?.length) {
+					if (statement.params) {
 						stmt.bind(statement.params);
 					}
 
